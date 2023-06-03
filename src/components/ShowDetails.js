@@ -41,11 +41,11 @@ function ShowDetails() {
       e.preventDefault();
       return;
     }
-    if (phoneNumber.length!=10){
+    if (phoneNumber.length!==10){
       alert("invalid Number")
       e.preventDefault();
     }
-    if (storedUserData && storedUserData == phoneNumber) {
+    if (storedUserData && storedUserData === phoneNumber) {
     alert('User data already exists in session storage!');
     e.preventDefault();
 
@@ -105,33 +105,3 @@ function ShowDetails() {
 }
 
 export default ShowDetails;
-
-// {formOpen ? (
-//   <div class="login-box">
-//   <form onSubmit={handleFormSubmit}>
-//      <div class="user-box">
-//     <h3>Book Movie Ticket</h3>
-//     <label>
-//       Movie Name:
-//       <input type="text" value={show.name} disabled />
-//     </label></div><div class="user-box">
-//     <label>
-//       Your Name:
-//       <input type="text" value={userName} onChange={(e) => setUserName(e.target.value)} />
-//     </label></div>
-//   <br /><div class="user-box">
-//     <label>
-//       Phone Number:
-//       <input type="text" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
-//     </label></div>
-//     <br />
-//     <br />
-//       <span></span>
-//   <span></span>
-//   <span></span>
-//   <span></span>
-//     <button type="submit">Submit</button>
-//   </form></div>
-// ) : (
-//   <button onClick={handleFormOpen}>Book Ticket</button>
-// )}
