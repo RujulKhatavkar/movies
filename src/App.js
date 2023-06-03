@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ShowList from './ShowList';
+import ShowList from '.components/ShowList';
 import ShowDetails from '.components/ShowDetails';
-import BookingForm from '.components/BookingForm';
 
 
 function App() {

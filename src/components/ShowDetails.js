@@ -44,7 +44,7 @@ function ShowDetails() {
     if (phoneNumber.length!==10){
       alert("invalid Number")
       e.preventDefault();
-    }
+    } 
     if (storedUserData && storedUserData === phoneNumber) {
     alert('User data already exists in session storage!');
     e.preventDefault();
